@@ -11,15 +11,16 @@ public class Main {
     public static void choose(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("1)Book 2)StudentInfo ");
-        System.out.print("Enter the program u what to run : ");
+        System.out.println("1)Book 2)StudentInfo 3)Caulculator");
+        System.out.print("Enter the object u want to run : ");
         int num = sc.nextInt();
         System.out.println();
 
         switch(num){
             case 1 -> classBook();
             case 2 -> Studentinfo();
-            default -> System.out.println("invalid number");
+            case 3 -> Calculator();
+            default -> System.out.println("Invalid number");
         }
     }
     public static void classBook(){
@@ -43,5 +44,24 @@ public class Main {
         sd1.display();
         sd2.display();
 
+    }
+    public static void Calculator(){
+
+        Calculator numbs1 = new Calculator(100,20);
+        Calculator numbs2 = new Calculator(40,2);
+
+        System.out.println("<!------ Calculator ------!> \n");
+
+        numbs2.add(5,2);
+        numbs2.add(4,6);
+
+        numbs2.subtract(5,2);
+        numbs2.subtract(4,6);
+
+        numbs2.multiply(5,2);
+        numbs2.multiply(4,6);
+
+        numbs2.divide(5,2);
+        numbs2.divide(4,6);
     }
 }
