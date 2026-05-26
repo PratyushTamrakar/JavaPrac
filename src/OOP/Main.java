@@ -11,7 +11,7 @@ public class Main {
     public static void choose(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("1)Book ");
+        System.out.println("1)Book 2)StudentInfo ");
         System.out.print("Enter the program u what to run : ");
         int num = sc.nextInt();
         System.out.println();
@@ -35,6 +35,13 @@ public class Main {
 
     }
     public static void Studentinfo(){
-        System.out.println("This is the students info..");
+        StudentInfo sd1= new StudentInfo("Pratyush Tamrakar",19,58.68);
+        StudentInfo sd2 = new StudentInfo("Nishan Subedi",20,78.28);
+
+        System.out.println("<!------ Welcome to the StudentInfo class ------!>\n");
+
+        sd1.display();
+        sd2.display();
+
     }
 }

@@ -3,23 +3,18 @@ package OOP;
 public class StudentInfo {
     String name;
     int age;
-    float marks;
+    double marks;
+
+    StudentInfo(String theName, int age, double marks){
+        this.name = theName;
+        this.age = age;
+        this.marks = marks;
+
+    }
+    void display(){
+        System.out.println("\nName : "+name);
+        System.out.println("Age : "+age);
+        System.out.printf("Marks : %.2f \n",marks);
+    }
 
 }
-/*
-1. Student Info Program
-
-Create a class Student.
-
-Fields:
-name
-age
-marks
-Requirements:
-Create a constructor to set all values.
-Create a method:
-display() → prints all student details
-In main():
-Create 2 student objects
-Call display() for both
- */
