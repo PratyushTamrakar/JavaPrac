@@ -33,8 +33,8 @@ public class Book {
     }
 
     void displayInfo() {
-        System.out.println("Title: " + title);
+        System.out.println("\nTitle: " + title);
         System.out.println("Author: " + author);
-        System.out.println("Borrowed: " + isBorrowed);
+        System.out.println("Borrowed: \n" + isBorrowed);
     }
 }

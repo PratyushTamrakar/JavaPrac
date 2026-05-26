@@ -1,6 +1,10 @@
 package OOP;
 
 public class StudentInfo {
+    String name;
+    int age;
+    float marks;
+
 }
 /*
 1. Student Info Program
