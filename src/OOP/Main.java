@@ -20,6 +20,7 @@ public class Main {
             case 1 -> classBook();
             case 2 -> Studentinfo();
             case 3 -> Calculator();
+            case 4 -> Car();
             default -> System.out.println("Invalid number");
         }
     }
@@ -64,4 +65,27 @@ public class Main {
         numbs2.divide(5,2);
         numbs2.divide(4,6);
     }
+    public static void Car(){
+
+        Car car1 = new Car("BMW","black");
+        Car car2 = new Car("Lamborgini","blue");
+        Car car3 = new Car("Corvett","grey");
+        Car car4 = new Car("Pagani","black");
+        Car car5 = new Car("Ferrari","red");
+
+        Car[] car= {car1,car2,car3,car4,car5};
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("<!------ Cars ------!>");
+
+        car2.run();
+        car3.run();
+        car4.run();
+        for(Car cars:car){
+            cars.display();
+        }
+
+    }
+
 }
